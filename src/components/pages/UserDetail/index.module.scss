@@ -1,0 +1,32 @@
+.UserRepo {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.formGroup {
+  width: 100%;
+}
+
+.formButton {
+  width: 100%;
+  display: flex;
+
+  button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #75acce6d;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    i {
+      font-size: 12px;
+      padding-right: 5px;
+    }
+  }
+}

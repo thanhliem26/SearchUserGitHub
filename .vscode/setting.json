@@ -1,0 +1,17 @@
+{
+  "files.eol": "\n",
+  "editor.rulers": [80],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff6347"
+  },
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Monokai Pro",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

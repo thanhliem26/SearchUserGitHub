@@ -1,0 +1,71 @@
+.backGroundListUser {
+  background-color: white;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.formContent {
+  background-color: white;
+  border: 1px dotted #ccc;
+  box-shadow: 0px 24px 38px 3px hsla(0, 0%, 0%, 0.14),
+    0px 9px 46px 8px hsla(0, 0%, 0%, 0.12),
+    0px 11px 15px -7px hsla(0, 0%, 0%, 0.2);
+
+  h1 {
+    color: #293fc6;
+    padding: 10px;
+  }
+
+  p {
+    padding: 0 0 20px;
+  }
+}
+
+.textUser {
+  font-size: 20px;
+}
+
+.FormImage {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 7px solid #0099aa;
+  overflow: hidden;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.imageUser {
+}
+
+.buttonDetail {
+  margin: 20px 0;
+  width: 90%;
+  padding: 15px;
+  background-color: #3dd5f3;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:hover {
+    background-color: #2b646f;
+  }
+}
