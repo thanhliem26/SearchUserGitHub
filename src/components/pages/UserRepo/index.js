@@ -13,7 +13,7 @@ const Index = () => {
   useEffect(() => {
     const getRepoList = async () => {
       let res = await getUserRepo(params.name)
-      setRepoList(res.data)
+      setRepoList(res)
     }
     getRepoList()
   }, [params.name])
@@ -22,16 +22,16 @@ const Index = () => {
     <div className="grid wide">
       <div className={styled.UserRepo}>
         <div className="row">
-          <div className={clsx('col l-12', styled.formGroup)}>
+          <div className={clsx('col l-12 m-12 c-10 c-o-1', styled.formGroup)}>
             <div className={styled.formButton}>
-              <button>
-                <Link to="/">
+              <Link to="/">
+                <button>
                   <i className="fa-solid fa-angles-left"></i>Back
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
-          <div className={clsx('col l-12', styled.formGroup)}>
+          <div className={clsx('col l-12 m-12 c-10 c-o-1', styled.formGroup)}>
             <h1>Repo List</h1>
             <p>{repoList.length} repositories of the first 30 reppositories</p>
           </div>

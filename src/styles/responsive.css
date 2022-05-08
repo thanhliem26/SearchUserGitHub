@@ -32,6 +32,11 @@
 }
 
 @media only screen and (max-width: 40em) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .c-0 {
     display: none;
   }

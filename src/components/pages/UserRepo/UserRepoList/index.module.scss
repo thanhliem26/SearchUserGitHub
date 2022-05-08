@@ -1,0 +1,156 @@
+.reponEmpty {
+  background-color: #777171;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+  color: white;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.formContent {
+  background-color: white;
+  border: 1px dotted #ccc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #bdb8b8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #75acce6d;
+  }
+}
+
+.titleMain {
+  width: 100%;
+  h2 {
+    font-weight: 500;
+    font-size: 23px;
+  }
+}
+
+.listRule {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.itemRule {
+  text-align: left;
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+}
+
+.language {
+  background-color: orange;
+  color: #f3f3f3;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  padding: 3px 8px;
+  width: fit-content;
+}
+//again
+.repoList {
+  background-color: #283046;
+  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 24%);
+  padding-left: 0;
+  padding-right: 0;
+  border-collapse: collapse;
+  margin: 50px 0;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    thead {
+      background-color: #343d55;
+      tr {
+        border: 1px solid #3b4253;
+        th {
+          font-size: 15px;
+          padding: 10px 0;
+          color: white;
+        }
+      }
+    }
+
+    tbody {
+      background-color: #283046;
+      tr {
+        border: 1px solid #3b4253;
+        cursor: pointer;
+        td {
+          padding: 15px 0;
+          color: white;
+
+          // &:nth-child(2) {
+          //   background-color: red;
+          // }
+
+          span {
+            margin: 3px 0;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.progress {
+  width: 100%;
+  height: 6px;
+  border-radius: 6px;
+  opacity: 0.2;
+  position: relative;
+  margin: 3px 0;
+}
+
+.progress__percent {
+  position: relative;
+  width: 0;
+  top: 0;
+  left: 0;
+  height: 5px;
+  transform: translateY(-8px);
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+@media (min-width: 60em) and (max-width: 77.4375em) {
+  .repoList {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 60em) {
+  .thead {
+    tr {
+      th {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .tbody {
+    tr {
+      td {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}

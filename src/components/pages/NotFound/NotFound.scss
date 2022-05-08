@@ -1,0 +1,111 @@
+.NotFound {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(45deg, #4158d0, #c850c0, #ffcc70);
+
+  .grid {
+    height: 100%;
+    .row {
+      justify-content: center;
+      height: inherit;
+      align-items: center;
+      .NotFound__content {
+        min-height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px #342e2e;
+
+        .NotFound__content-main {
+          background-image: url('./notFound.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          -webkit-background-clip: text;
+          color: transparent;
+          font-size: 5rem;
+          max-height: 200px;
+
+          h1 {
+            font-family: system-ui;
+          }
+        }
+
+        .NotFound__content-title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            font-size: 2.5rem;
+            color: var(--black-color);
+            text-align: center;
+          }
+
+          p {
+            font-size: 1.5rem;
+            width: 80%;
+            text-align: center;
+            font-weight: 600;
+          }
+
+          button {
+            border: none;
+            background-color: #0d77a1;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 20px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* > PC low resolution */
+@media (min-width: 63.9375em) and (max-width: 77.4375em) {
+}
+
+/* PC > low resolution */
+@media (min-width: 69.5625em) {
+}
+
+/* > Tablet */
+@media (min-width: 46.25em) {
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .NotFound {
+    .grid {
+      .row {
+        .NotFound__content {
+          .NotFound__content-main {
+            font-size: 4rem;
+            max-height: 100px;
+
+            h1 {
+            }
+          }
+
+          .NotFound__content-title {
+            h2 {
+            }
+
+            p {
+            }
+
+            button {
+            }
+          }
+        }
+      }
+    }
+  }
+}

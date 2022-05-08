@@ -14,7 +14,9 @@ const UserList = ({ userlist, total }) => {
         <NotFound />
       )}
       {userlist.length === total && userlist.length !== 0 ? (
-        <h1 style={{ width: '100%', padding: 50 }}>No Other User</h1>
+        <h1 style={{ width: '100%', padding: 50, color: 'white' }}>
+          No Other User
+        </h1>
       ) : (
         ''
       )}

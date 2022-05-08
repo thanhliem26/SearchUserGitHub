@@ -7,6 +7,16 @@
   z-index: 10;
   background-color: rgb(0 0 0 / 50%);
   overflow: scroll;
+  animation: opacity1 1s ease-in-out;
+}
+
+@keyframes opacity1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .openModal {
@@ -14,6 +24,18 @@
   margin-top: 50px;
   padding: 20px;
   border-radius: 10px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  animation: identifier 0.5s ease-in-out;
+}
+
+@keyframes identifier {
+  from {
+    transform: translateY(-5000px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .headerReadME {
@@ -44,5 +66,16 @@
 .modal-body {
   img {
     width: 100%;
+  }
+}
+
+@media (min-width: 40em) {
+}
+
+@media only screen and (max-width: 40em) {
+  .openModal {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    margin-left: 8.33333%;
   }
 }

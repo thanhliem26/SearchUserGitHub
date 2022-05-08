@@ -1,0 +1,180 @@
+.backGroundListUser {
+  margin: 50px 0;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.formContent {
+  background-color: #333750;
+  border: 1px dotted #ccc;
+  box-shadow: 0px 24px 38px 3px hsl(0deg 0% 0% / 34%),
+    0px 9px 46px 8px hsl(0deg 0% 0% / 35%),
+    0px 11px 15px -30px hsl(0deg 0% 0% / 20%);
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease;
+
+  &:hover {
+    top: -10px;
+  }
+
+  h1 {
+    color: #293fc6;
+    padding: 10px;
+  }
+
+  p {
+    padding: 0 0 20px;
+  }
+}
+
+.textUser {
+  font-size: 20px;
+}
+
+.FormImage {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 7px solid #0099aa;
+  overflow: hidden;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.imageUser {
+}
+
+.buttonDetail {
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 0;
+  background-image: linear-gradient(120deg, #8b62cc, #e256af);
+  font-size: 16px;
+  min-width: 100px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 10px 20px -5px rgb(0 0 0 / 40%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.headerContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 30px;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: #9b9696;
+    top: 110%;
+  }
+}
+
+.imageMain {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 24px 38px 3px hsla(0, 0%, 0%, 0.14),
+    0px 9px 46px 8px hsla(0, 0%, 0%, 0.12),
+    0px 11px 15px -7px hsla(0, 0%, 0%, 0.2);
+
+  img {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.userName {
+  margin: 20px 0;
+  color: white;
+
+  h3 {
+    font-size: 25px;
+
+    text-transform: uppercase;
+  }
+}
+
+.userType {
+  display: flex;
+  margin: 10px 0;
+  font-size: 18px;
+
+  h5 {
+    margin: 0 10px;
+  }
+}
+
+.bodyContent {
+  margin: 50px 0;
+}
+
+.redirect {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  span {
+    color: white;
+    font-weight: 800;
+    margin: 10px 0;
+  }
+}
+
+.repo {
+  background-image: linear-gradient(120deg, #ab2b7c, #da4386);
+  color: white;
+}
+
+.subcrip {
+  background-image: linear-gradient(120deg, #0766fd, #3eaaf7);
+  color: white;
+}
+
+.userLink {
+  background-color: #efe8e8;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px -4px rgb(0 0 0 / 50%);
+
+  i {
+    font-size: 25px;
+  }
+}

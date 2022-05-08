@@ -1,11 +1,11 @@
-import axios from 'axios'
+import axios from './axios'
 
 const getUserInfo = (name, page) => {
-  return axios.get(`https://api.github.com/search/users?q=${name}&page=${page}`)
+  return axios.get(`search/users?q=${name}&page=${page}`)
 }
 
 const getUserRepo = (name) => {
-  return axios.get(`https://api.github.com/users/${name}/repos`)
+  return axios.get(`users/${name}/repos`)
 }
 
 export { getUserInfo, getUserRepo }

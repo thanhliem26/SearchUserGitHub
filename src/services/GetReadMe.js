@@ -1,7 +1,5 @@
-import axios from 'axios'
+import axios from './axios'
 
 export const getReadMe = (user, seletedRepo) => {
-  return axios.get(
-    `https://api.github.com/repos/${user}/${seletedRepo}/contents/README.md`,
-  )
+  return axios.get(`repos/${user}/${seletedRepo}/contents/README.md`)
 }
